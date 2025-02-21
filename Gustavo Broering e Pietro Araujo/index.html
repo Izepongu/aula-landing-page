@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Minha Marca</div>
+        <nav>
+            <ul>
+                <li><a href="#seção-principal">Início</a></li>
+                <li><a href="#benefícios">Benefícios</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="seção-principal">
+        <h1>Bem-vindo!</h1>
+        <p>Gustavo Broering Izepon e Pietro Assini</p>
+        <button onclick="mostrarModal()">Saiba Mais</button>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="benefícios">
+        <h2>Benefícios</h2>
+        <ul>
+            <li>Benefício 1</li>
+            <li>Benefício 2</li>
+            <li>Benefício 3</li>
+        </ul>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Marca de Gustavo e Pietro </p>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2>Saiba Mais!</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
